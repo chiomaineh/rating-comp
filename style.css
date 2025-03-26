@@ -1,0 +1,166 @@
+body {
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh; 
+}
+
+.rating-container, .thank-you-container {
+    margin: 0 auto;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: hsl(227, 27%, 19%);
+    max-width: 300px;
+    padding: 20px;
+}
+
+.star-container {
+    border: 2px solid none;
+    border-radius: 50%;
+    background-color:hsl(226, 21%, 24%) ;
+    width: 33px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-icon {
+  width: 35%;
+  height: auto;
+}
+
+.question {
+    color: white;  
+    font-weight: bold; 
+}
+
+.feedback {
+    color:hsl(226, 16%, 69%);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+
+.number-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+   
+    
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(225, 16%, 38%);
+    color: hsl(226, 16%, 69%);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    
+}
+
+.number:hover {
+    background-color:  orange;
+    
+}
+
+.number:active {
+    background-color: #fff;
+
+    color: white;
+}
+
+.number.selected {
+    background-color: orange !important;
+    color: white;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(229, 13%, 17%);
+    font-weight: bold;
+}
+
+.submit-button:active{
+    background-color: #fff;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-u-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appreciate {
+    text-align: center;
+    color: hsl(226, 16%, 69%);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.select {
+    color: rgb(247, 163, 8);
+    border:2px solid none;
+    border-radius: 10px;
+    background-color:  hsl(224, 19%, 26%);
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.thank-you-container {
+    display: none;
+}
+
+.appreciate-2 {
+    display: none; 
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 786px) {
+    .rating-container, .thank-you-container {
+        max-width: 210px;
+    }
+
+    .number {
+        width: 60px;
+        height: 25px
+    }
+  
+    .appreciate-2 {
+        display: flex;
+        text-align: center;
+        color: hsl(226, 16%, 69%);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+   .appreciate {
+    display: none;
+   } 
+}
